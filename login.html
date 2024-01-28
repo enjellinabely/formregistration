@@ -3,21 +3,27 @@
 <head>
     <style>
         body{
-            background-color: blue;
+            background-image: url('img.jpg');
             background-size: cover;
             background-position: center;
             width: auto;
-            height: auto;
+            min-height: 100vh;
+            display: flex;
         }
         .card{
             margin: auto;
-            width: 400px;
+            width: 100%;
+            display: flex;
+            max-width: 850px;
             padding: 10px;
             background: white;
         }
+        .login {
+            width: 400px;
+        }
         .form{
             margin: auto;
-            width: 800px;
+            width: 850px;
             padding: 10px;
             background: white;
         }
@@ -31,40 +37,53 @@
             background-color: #184a88;
             color: white;
             font-size: 12pt;
-            margin-top: 40px;
-            margin-left: 25px;
+            margin-top: 10px;
+            margin-left: 4px;
             border-radius: 10px;
         }
         .btn2 {
             width: 80px;
             height: 40px;
             background-color: #ff9900;
-            margin-left: 25px;
+            margin-left: 5px;
             border-radius: 10px;
-        }   
+        }
+        .content{
+            width: 150px; 
+            margin-right: 800px;
+        }
+        .right img {
+            width: 450px;
+            height: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .right img {
+            width: 100%;
+            height: 100%;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
+    <img src="Logo SMK MTS.png" width="80px" height="80px" align="left">
     <div class="card">
-        <div style="display:flex;">
+        <div class="container">
         <form>
-            <h2 align="center">Silahkan Login Untuk Melanjutkan!</h2>
+            <h2 align="left">Silahkan Login Untuk Melanjutkan!</h2>
             <p align="left">Username</p>
             <input style="text" placeholder="Masukkan Username Anda" class="fill"></p>
             <p align="left">Password</p>
             <input type='password' placeholder="Masukkan Password Anda" class="fill"></p>
-            <br>
             <button type="submit" class="btn1">Login</button>
-            <br>
             <p>Saya belum memiliki akun. Buat
                 <button class="btn2"><a href="login2.html">Disini</button></a></p>
         </form>
-    </div>
-        <div class="right-content">
-            <img src="login.jpeg" class="img-login">
+        </div>
+        <div class="right">
+            <img src="login.jpeg" alt="">
         </div>
     </div>
 </body>
